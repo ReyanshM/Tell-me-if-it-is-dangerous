@@ -1,0 +1,56 @@
+h1{
+    background-color:white;
+    font-family: 'Syne Mono', monospace;
+}
+#logo_img{
+    display:inline-block;
+    width:90px;
+    height:90px;
+}
+table{
+    margin-bottom:30px;
+    width:100%;
+}
+#bulb{
+    display:inline-block;
+    width:90px;
+    height:90px;
+}
+footer{
+    background-color:grey;
+    position:fixed;
+    bottom:2.5px;
+    padding-top:10px;
+    margin-top:10px;
+    right:20px;
+    left:20px;
+    margin-top:30px;
+}
+body{
+    margin:0 5px;
+}
+h3{
+    margin:2.5px;
+}
+#result{
+    background-color:white;
+    border-radius:5px;
+    width:750px;
+    text-align:left;
+}
+td{
+    padding:10px;
+    width:45%;
+    text-align:center;
+}
+#webcam,#snapshot{
+    margin:15px auto;
+    height:600px;
+    width:500px;
+}
+#snapshot{
+    background-image:url(https://img.icons8.com/pastel-glyph/50/000000/image--v1.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position-x:center;
+}
