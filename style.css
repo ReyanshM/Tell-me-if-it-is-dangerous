@@ -43,14 +43,9 @@ td{
     width:45%;
     text-align:center;
 }
-#webcam,#snapshot{
+#webcam{
     margin:15px auto;
     height:600px;
     width:500px;
-}
-#snapshot{
-    background-image:url(https://img.icons8.com/pastel-glyph/50/000000/image--v1.png);
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position-x:center;
+    margin-left:365px;
 }
