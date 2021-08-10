@@ -1,20 +1,19 @@
 res="";
 acc=0;
-rough;
+rough=0;
 resLength=0;
 res;
-function preload(){
-    img=loadImage('image.jpg');
-}
 function setup(){
     Canvas=createCanvas(600,500);
     Canvas.parent('webcam');
+    video=createCapture(VIDEO);
+    video.size(600,500);
+    video.hide();
     objectDetector=ml5.objectDetector('cocossd', modelLoaded);
 }
 function modelLoaded(){
     console.log("The model is loaded");
     status="true";
-    objectDetector.detect(img, Results);
 }
 function Results(error, results){
     if(error){
@@ -67,8 +66,9 @@ function Results(error, results){
     }
 }
 function draw(){
-    image(img,0,0,600,500);
+    image(video,0,0,600,500);
     if(status != ""){
+        objectDetector.detect(video, Results);
         for(m=0;m<resLength;m++){
             fill("red");
             acc=res[m].confidence*100;
